@@ -1,7 +1,15 @@
 {
-  "name": "flash-card",
+  "name": "@richardsimonb/flash-card",
   "description": "Simple flash card component",
-  "private": true,
+  "keywords": [
+    "flashcard",
+    "react",
+    "typescript",
+    "vite",
+    "storybook"
+  ],
+  "private": false,
+  "license": "MIT",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
