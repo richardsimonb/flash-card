@@ -10,6 +10,8 @@ const meta = {
   },
   tags: ['autodocs'],
   args: {
+    current: 0,
+    total: 100,
   },
 } satisfies Meta<typeof ProgressBar>
 
@@ -18,5 +20,7 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
+    current: 50,
+    total: 100,
   },
 }
