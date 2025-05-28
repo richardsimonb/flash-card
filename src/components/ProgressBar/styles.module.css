@@ -1,14 +1,13 @@
 .bar {
     width: 100%;
     min-width: 300px;
-    height: 30px;
+    height: auto;
+    padding: 5px;
     background-color: white;
     border-radius: 10px;
     border-style: solid;
     border-color: #c2c2c2;
     border-width: 2px;
-    margin: auto;
-    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,7 +16,7 @@
 }
 
 .progress {
-    height: 30px;
+    height: 35px;
     background-color: #c2c2c2;
     border-radius: 10px;
 }

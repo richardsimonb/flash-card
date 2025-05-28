@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ProgressBar } from "../ProgressBar";
 import { Card } from "../Card";
+import styles from "./styles.module.css";
 
 const data = [
   {
@@ -35,13 +36,16 @@ export function FlashCard() {
 
   return (
     <>
-      <ProgressBar current={currentIndex + 1} total={data.length} />
-      <Card
-        key={currentIndex}
-        question={data[currentIndex].question}
-        answer={data[currentIndex].answer}
-        handleNext={handleNext}
-        handlePrevious={handlePrevious} />
+      <h1>Flash Cards</h1>
+      <div className={styles['flash-card']}>
+        <ProgressBar current={currentIndex + 1} total={data.length} />
+        <Card
+          key={currentIndex}
+          question={data[currentIndex].question}
+          answer={data[currentIndex].answer}
+          handleNext={handleNext}
+          handlePrevious={handlePrevious} />
+      </div>
     </>
   );
 }
