@@ -27,4 +27,5 @@ export const Default: Story = {
     handleNext: () => console.log('Next card'),
     handlePrevious: () => console.log('Previous card'),
   },
+  
 }

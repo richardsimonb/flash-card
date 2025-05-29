@@ -20,7 +20,7 @@ export function Card({ question, answer, handleNext, handlePrevious }: CardProps
         display: 'none',
     }
     return (
-        <>
+        <div className={styles['card']}>
             <div className={styles['text-container']}>
                 <p style={showAnswer ? hidden : undefined}>{question}</p>
                 <p style={showAnswer ? undefined : hidden}>{answer}</p>
@@ -31,6 +31,6 @@ export function Card({ question, answer, handleNext, handlePrevious }: CardProps
                 <button onClick={handleNext}>Next &#62;</button>
             </div>
 
-        </>
+        </div>
     );
 }

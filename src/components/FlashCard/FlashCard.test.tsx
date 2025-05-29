@@ -6,7 +6,18 @@ describe('FlashCard test:', () => {
   afterEach(cleanup)
 
   it('should render component', () => {
-    render(<FlashCard />)
+    render(<FlashCard
+      title={"flashcard"}
+      data={[
+        {
+          question: 'What is the capital of France?',
+          answer: 'Paris'
+        },
+        {
+          question: 'What is the largest planet in our solar system?',
+          answer: 'Jupiter'
+        },
+      ]} />)
   })
 
 })
