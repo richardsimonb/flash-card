@@ -3,6 +3,11 @@
 *::after {
     box-sizing: inherit;
 }
+.flash-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .flash-card {
   display: flex;

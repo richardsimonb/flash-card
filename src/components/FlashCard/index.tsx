@@ -30,7 +30,7 @@ export function FlashCard({title, data}: FlashCardProps) {
   };
 
   return (
-    <>
+    <div className={styles['flash-card-container']}>
       <h1>{title}</h1>
       <div className={styles['flash-card']}>
         <ProgressBar current={currentIndex + 1} total={data.length} />
@@ -41,6 +41,6 @@ export function FlashCard({title, data}: FlashCardProps) {
           handleNext={handleNext}
           handlePrevious={handlePrevious} />
       </div>
-    </>
+    </div>
   );
 }
