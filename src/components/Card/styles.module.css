@@ -1,14 +1,16 @@
 .card {
     margin-top: 10px;
     width: 100%;
-    min-width: 400px;
+    height: auto;
+    min-height: 350px;
+    min-width: 250px;
     border: #c2c2c2 2px solid;
     border-radius: 10px;
     padding: 5px;
 }
 
 .text-container {
-    width: 100%;
+    width: auto;
     height: 300px;
     border-radius: 10px;
     padding: 20px;
@@ -28,19 +30,26 @@
 }
 
 .button-container {
+    width: auto;
+    height: auto;
+    min-height: 30px;
     display: flex;
     justify-content: space-between;
     margin-top: 5px;
     background-color: #eeeeee;
+    border-radius: 10px;
 }
 
 .button-container button {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold; 
     font-size: 0.75rem;
-    min-width: 30%;
-    padding: 10px 20px;
+    color: black;
+    width: 30%;
+    height: auto;
     border: none;
     cursor: pointer;
-    background-color: #eeeeee;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px
 }
