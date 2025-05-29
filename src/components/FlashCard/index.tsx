@@ -3,7 +3,7 @@ import { ProgressBar } from "../ProgressBar";
 import { Card } from "../Card";
 import styles from "./styles.module.css";
 
-interface FlashCard{
+interface FlashCard {
   question: string;
   answer: string;
 }
@@ -13,7 +13,7 @@ type FlashCardProps = {
   data: FlashCard[];
 }
 
-export function FlashCard({title, data}: FlashCardProps) {
+export function FlashCard({ title, data }: FlashCardProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   function handleNext() {
@@ -30,17 +30,16 @@ export function FlashCard({title, data}: FlashCardProps) {
   };
 
   return (
-    <div className={styles['flash-card-container']}>
+
+    <div className={styles['flash-card']}>
       <h1>{title}</h1>
-      <div className={styles['flash-card']}>
-        <ProgressBar current={currentIndex + 1} total={data.length} />
-        <Card
-          key={currentIndex}
-          question={data[currentIndex].question}
-          answer={data[currentIndex].answer}
-          handleNext={handleNext}
-          handlePrevious={handlePrevious} />
-      </div>
+      <ProgressBar current={currentIndex + 1} total={data.length} />
+      <Card
+        key={currentIndex}
+        question={data[currentIndex].question}
+        answer={data[currentIndex].answer}
+        handleNext={handleNext}
+        handlePrevious={handlePrevious} />
     </div>
   );
 }
